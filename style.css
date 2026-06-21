@@ -243,3 +243,68 @@ section {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, rgb(250, 5, 250), rgb(0, 150, 250));
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1.5fr));
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-10px) scale(1.02);
+}
+
+.project-card img {
+  width: 20vw;
+  border-radius: 2rem;
+}
+
+.project-card:hover .btn {
+  border: 2px solid white;
+  color: white;
+}
+
+.project-card:hover .btn:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.input-box input {
+  position: relative;
+  border-radius: 3rem;
+  border: 2px solid black;
+  padding: 2rem 8rem;
+  font-size: 3rem;
+}
